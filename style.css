@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+  font-family: 'Varela', sans-serif;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, .2),rgba(0, 0, 0, .6)) ,url('/images/01porsche.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+   
+}
+.warapper{
+    display: flex;
+    align-items: center;
+    height: inherit;
+    justify-content: center;
+}
+.hidden {
+    display: none;
+}
+.btn {
+    border: 0;
+    background: transparent;
+    font-family: inherit;
+    font-size: 20px; 
+    color: #fff;
+    cursor: pointer;
+}
+.show-btn {
+    background-color: #525355;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition:.5s;
+    
+}
+.show-btn:hover {
+    background-color: #232425;
+    box-shadow: 5px 5px 5px rgb(116, 115, 115);
+    color: crimson;
+}
+.modal {
+    transform: translate(-50%,-50%);
+    position: fixed;
+    max-width: 600px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(222, 247, 247);
+    padding:15px ;
+    border-radius: 8px;
+    z-index: 100;
+}
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.close-btn {
+    font-size: 20px;
+    color: #474b4f;
+}
+.close-btn:active {
+    color: #8f9ca5;
+}
+.modal-title {
+    margin-bottom: 15px;
+}
+.overlay {
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(5px);
+}
+.modal-body p {
+    font-family: inherit;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
